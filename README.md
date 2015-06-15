@@ -33,17 +33,14 @@ Convert Pidgin conversation log to Adium format with Python
 
 ## Pidgin log format:
 * Messages starts from the 2nd line.
-* The first line of a message starts with a timestamp embraced by ().
-** (5/6/2015 12:13:14 AM) -- for msg date different from what is recorded in the filename)
-** (2:05:59 PM) -- for msg date the same as the one recored in the filename 
+* The first line of a message starts with a timestamp embraced by (): (5/6/2015 12:13:14 AM) -- for msg date different from what is recorded in the filename); (2:05:59 PM) -- for msg date the same as the one recored in the filename 
 * If the current line is a continuation of the message started in some previous line, it will not have the above time header. 
-* After the timestamp, it has optional sender info before the next :. No sender info if the message is a status update.
-** (2:05:59 PM) user@somedomain.com
+* After the timestamp, it has optional sender info before the next :. No sender info if the message is a status update: (2:05:59 PM) user@somedomain.com
 
 ## Adium log format:
-1) See the source code for sample log format.
-2) Sender and time as two attributes of the message tag.
-3) The formatting by the line breaks and spacings inside the message tag are accurately reproduced in the Adium conversation log viewer.
-4) The window open time shouldn't be earlier than the one stated in the log file name.
-5) The window close time shouldn't be earlier than any message timestamp.
+* See the source code for sample log format.
+* Sender and time as two attributes of the message tag.
+* The formatting by the line breaks and spacings inside the message tag are accurately reproduced in the Adium conversation log viewer.
+* The window open time shouldn't be earlier than the one stated in the log file name.
+* The window close time shouldn't be earlier than any message timestamp.
 
