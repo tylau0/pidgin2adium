@@ -5,10 +5,11 @@ Author: Eddie Lau
 Released under GPL v3 license
 
 # Usage
-1) Obtain a copy of your pidgin conversation log folder (See "Pidgin conversation log location" below on how to locate it on Windows). Also identify the location of the Adium conversation log.
-2) Put BeautifulSoup.py (from BeautifulSoup 3) and this file in the same folder. 
-3) Edit the user input parameters section and the Adium specific parameters section if needed. Then run "python pidgin2adium.py".
-4) You may choose to use options to override the parameters.
+1) Locate a system that can run python scripts. 
+2) Obtain a copy of your pidgin conversation log folder (See "Pidgin conversation log location" below on how to locate it on Windows). Also identify the location of the Adium conversation log.
+3) Put BeautifulSoup.py (from BeautifulSoup 3) and this file in the same folder.
+4) Edit the user input parameters section and the Adium specific parameters section if needed.
+5) You may choose to use options to override the parameters.
    python pidgin2adium.py --indir "<indir>" --outdir "<outdir>" --username <im_account_username> --domain <im_account_domain> --service <im_service_protocol>
 
 # Pidgin conversation log location:
@@ -21,6 +22,7 @@ Released under GPL v3 license
 
 # Adium conversation log location
 Default: /Users/<username>/Library/Application Support/Adium 2.0/Users/<username>/Logs
+
 
 # Developer info
 # Pidgin conversation log directory structure
